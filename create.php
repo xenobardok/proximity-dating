@@ -54,9 +54,13 @@
           <input placeholder="Month" id="month" type="text" class="validate">
           <label for="month"></label>
         </div>
-        <div class="input-field col s2">
+        <div class="input-field col s1">
           <input placeholder="Year" id="year" type="text" class="validate">
           <label for="year"></label>
+        </div>
+        <div class="input-field col s1">
+          <input placeholder="Gender" id="gender" type="text" class="validate">
+          <label for="gender"></label>
         </div>
       </div>
       <div class="row">
