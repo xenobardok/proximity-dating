@@ -37,8 +37,11 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
+          <input placeholder="Password" id="password" type="password" class="validate">
+          <label for="password"></label>
+          <div class="input-field col s12">
+            <input placeholder="Confirm Password" id="password" type="password" class="validate">
+            <label for="password"></label>
         </div>
       </div>
       <div class="row">
