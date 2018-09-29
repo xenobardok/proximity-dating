@@ -9,8 +9,61 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script src="js/login.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
+
+<?php
+$error="";
+if ($_POST) {
+
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+ 
+  try {
+    $db = "mysql:host=localhost;dbname=proxichats";
+    $user = "proxichats-admin";
+    $pass = "DdvGsF6hN7AA";
+    $pdo = new PDO($db, $user, $pass);
+
+    $password=md5($password);
+
+    $sql = ("SELECT * FROM users WHERE username='".$username."' AND password='".$password."'"); 
+
+
+    $result = $pdo->query($sql); 
+
+    $row = $result ->fetch();
+
+    if($row){
+                               
+      $username = $row['username'];
+      $name = $row['name'];
+ 
+      session_start();
+      $_SESSION['username']=$username;
+      $_SESSION['name']=$name;
+
+     echo "<script> window.location.href = 'proximity.php'; </script>";
+  
+  }
+  else{
+    $error="<div id='error'>Invalid email or password</div>";
+
+  }
+
+  }
+
+  catch(DOException $e)
+  {
+    die ($e->getMessage());
+  }
+}
+
+?>
+
+
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
@@ -28,36 +81,39 @@
     </div>
   </nav>
   <div class="row">
-    <form class="col s12" method="post">
+  <?php
+        echo $error;
+  ?>
+    <form method="post">
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Username" id="username" type="text" class="validate">
+          <input placeholder="Username" name="username" id="username" type="text" class="validate">
           <label for="username"></label>
+          <div id="nameError"></div>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Password" id="password" type="password" class="validate">
+          <input placeholder="Password" name="password" id="password" type="password" class="validate">
           <label for="password"></label>
+          <div id="pwError"></div>
         </div>
       </div>
       <div class="row center">
-        <button type="submit" href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</button>
+        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Login</button>
+    </div>
     </form>
+    <a href="forget.php"><button id="download-button" class="btn-large waves-effect waves-light orange">Forget</button></a>
+
   </div>
 
     <br><br>
   </div>
 
-  <?php>
+  <?php
     include "footer.php";
   ?>
 
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   </body>
 </html>

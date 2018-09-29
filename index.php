@@ -26,6 +26,18 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
+  <?php
+  session_start();
+
+  if (isset($_SESSION['username'])){
+      
+      $username= $_SESSION['username'];
+      echo "Hi, ".$username;
+    
+  }
+
+ ?>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
