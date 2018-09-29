@@ -12,43 +12,8 @@
 </head>
 <body>
 
-  <div class = "row">
-    <div class = "col s3">
-      <nav>
-        <ul id="slide-out" class="sidenav-fixed">
-        <li class="no-padding">
-          <ul class="collapsible collapsible-accordion">
-            <li>
-              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">People Nearby<i class="material-icons right">arrow_drop_down</i></a></li>
-              <ul id='dropdown1' class='dropdown-content'>
-                <ul>
-                  <li><a href="#!">First</a></li>
-                  <li><a href="#!">Second</a></li>
-                  <li><a href="#!">Third</a></li>
-                  <li><a href="#!">Fourth</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="left-align">
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recent Chats<i class="material-icons right">arrow_drop_down</i></a></li>
-        <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="#!">First</a></li>
-          <li><a href="#!">Second</a></li>
-          <li><a href="#!">Third</a></li>
-          <li><a href="#!">Fourth</a></li>
-        </ul>
-      </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      </nav>
-
-    </div>
-    <div class = "col s9">
-
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="successful.php" class="brand-logo">ProxiChats</a>
       <ul class="right ">
         <input placeholder="Status" id="status" type="text" class="validate">
       </ul>
@@ -57,11 +22,40 @@
   <div class="section no-pad-bot" id="index-banner">
   </div>
 
-  <!-- side nav -->
+<div class = "row">
+  <div class = "col s3">
+    <nav class="light-blue lighten-1" role="sidenav">
+      <ul class="">
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="login.php">First</a></li>
+          <li><a href="create.php">Second</a></li>
+          <li><a href="#!">Third</a></li>
+          <li><a href="#!">Fourth</a></li>
+        </ul>
+      </ul>
 
-    <br><br>
-  </div>
+
+    <ul class="">
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="#!">First</a></li>
+        <li><a href="#!">Second</a></li>
+        <li><a href="#!">Third</a></li>
+        <li><a href="#!">Fourth</a></li>
+      </ul>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+</nav>
 </div>
+
+<div class = "col s9">
+</div>
+
+
+</div>
+
+
 
   <footer class="page-footer orange">
     <div class="container">

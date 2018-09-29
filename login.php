@@ -9,10 +9,64 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 </head>
+
+<?php
+$error="";
+if ($_POST) {
+
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+ 
+  try {
+    $db = "mysql:host=localhost;dbname=proxichats";
+    $user = "proxichats-admin";
+    $pass = "DdvGsF6hN7AA";
+    $pdo = new PDO($db, $user, $pass);
+
+    $password=md5($password);
+
+    $sql = ("SELECT * FROM users WHERE username='".$username."' AND password='".$password."'"); 
+
+
+    $result = $pdo->query($sql); 
+
+    $row = $result ->fetch();
+
+    if($row){
+                               
+      $username = $row['username'];
+      $name = $row['name'];
+ 
+      session_start();
+      $_SESSION['username']=$username;
+      $_SESSION['name']=$name;
+
+     echo "<script> window.location.href = 'proximity.php'; </script>";
+  
+  }
+  else{
+    $error="<div id='error'>Invalid email or password</div>";
+
+  }
+
+  }
+
+  catch(DOException $e)
+  {
+    die ($e->getMessage());
+  }
+}
+
+?>
+
+
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
       </ul>
@@ -27,59 +81,39 @@
     </div>
   </nav>
   <div class="row">
-    <form class="col s12">
+  <?php
+        echo $error;
+  ?>
+    <form method="post">
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Username" id="username" type="text" class="validate">
+          <input placeholder="Username" name="username" id="username" type="text" class="validate">
           <label for="username"></label>
+          <div id="nameError"></div>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Password" id="password" type="password" class="validate">
+          <input placeholder="Password" name="password" id="password" type="password" class="validate">
           <label for="password"></label>
+          <div id="pwError"></div>
         </div>
       </div>
       <div class="row center">
-        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
+        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Login</button>
+    </div>
     </form>
+    <a href="forget.php"><button id="download-button" class="btn-large waves-effect waves-light orange">Forget</button></a>
+
   </div>
 
     <br><br>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of College Students at VolHacks III creating a location based messaging service. We hope you enjoy!</p>
+  <?php
+    include "footer.php";
+  ?>
 
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contact Us</h5>
-          <ul>
-            <p><a class="white-text" href="#!">Sunil Jamkatel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Shivam Kharga  (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Sagar Poudel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Andrew Jelson  (713)447-4998</a></p>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
   </body>
 </html>

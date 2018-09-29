@@ -12,64 +12,103 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Create Account</a></li>
+    <div class="nav-wrapper container"><a id="logo-container" href="successful.php" class="brand-logo">ProxiChats</a>
+      <ul class="right">
+        <li><a href="index.php">Logout</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">ProxiChats</h1>
+  <div class="row">
+   <form class="col s12">
+       <div class="row">
+           <div class="input-field col s11">
+             <i class="material-text prefix">Name:</i>
+             <input disabled value="name" type="text" class="validate">
+             <label for="name"></label>
+           </div>
+           <div class="input-field col s1">
+               <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+           </div>
+       </div>
+      <div class="row">
+        <div class="input-field col s11">
+          <i class="material-text prefix">Username:</i>
+          <input disabled value="username" type="text" class="validate">
+          <label for="username"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s11">
+          <i class="material-text prefix">Email:</i>
+          <input disabled value="email" type="text" class="validate">
+          <label for="email"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s7">
+          <i class="material-text prefix">Phone Number:</i>
+          <input disabled value="phone" type="text" class="validate">
+          <label for="phone"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+        <div class="input-field col s3">
+          <i class="material-text prefix">Gender:</i>
+          <input disabled value="gender" type="text" class="validate">
+          <label for="gender"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s5">
+          <i class="material-text prefix">Password:</i>
+          <input disabled value="password" type="text" class="validate">
+          <label for="password"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+        <div class="input-field col s5">
+          <i class="material-text prefix">Confirm Password:</i>
+          <input disabled value="confirm_password" type="text" class="validate">
+          <label for="confirm_password"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+      </div>
+    <div class="row">
+      <div class="input-field col s2">
+        <i class="material-text prefix">Distance:</i>
+      </div>
+      <div class="input-field col s10">
+        <form action="#">
+          <p class="range-field">
+            <input type="range" id="Distance" min="1" max="10" />
+          </p>
+        </form>
+      </div>
       <div class="row center">
-        <h5 class="header col s12 light">A chat service for nearby users</h5>
+        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Update Account</a>
       </div>
-      <div class="row left">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
-      </div>
-      <div class="row right">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
-      </div>
-      <br><br>
-
     </div>
+    </form>
   </div>
 
     <br><br>
   </div>
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of College Students at VolHacks III creating a location based messaging service. We hope you enjoy!</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contact Us</h5>
-          <ul>
-            <p><a class="white-text" href="#!">Sunil Jamkatel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Shivam Kharga  (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Sagar Poudel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Andrew Jelson  (713)447-4998</a></p>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+  <?php include "footer.php" ?>
 
 
   <!--  Scripts-->
