@@ -18,8 +18,8 @@
 <?php
 $error="";
 if ($_POST) {
-    
- 
+
+
 
   $name = $_POST['name'];
   $password = md5( $_POST['password']);
@@ -29,7 +29,7 @@ if ($_POST) {
   $gender = $_POST['gender'];
 
 
- 
+
   try {
     $db = "mysql:host=localhost;dbname=proxichats";
     $user = "proxichats-admin";
@@ -37,24 +37,24 @@ if ($_POST) {
     $pdo = new PDO($db, $user, $pass);
 
     $sql1 = "Select * from users where email='".$email."'";
-    $result1 = $pdo->query($sql1); 
+    $result1 = $pdo->query($sql1);
     $row1 = $result1->fetch();
 
     $sql2 = "Select * from users where username='".$username."'";
-    $result2 = $pdo->query($sql2); 
+    $result2 = $pdo->query($sql2);
     $row2 = $result2->fetch();
 
     if($row1){
       echo "Email already registered.";
     }
-    
+
     else if($row2)
     {
       echo "Username already taken.";
     }
     else{
-      $sql = "INSERT INTO users(username,name,email,password,phone,gender) VALUES('".$username."','".$name."','".$email."','".$password."','".$phone."','".$gender."')"; 
-      $pdo->query($sql); 
+      $sql = "INSERT INTO users(username,name,email,password,phone,gender) VALUES('".$username."','".$name."','".$email."','".$password."','".$phone."','".$gender."')";
+      $pdo->query($sql);
 
       session_start();
       $_SESSION['username']=$username;
@@ -62,14 +62,14 @@ if ($_POST) {
       echo "<script> window.location.href = 'proximity.php'; </script>";
     }
 
-     
 
 
-      
+
+
    } catch (PDOException $e) {
       echo "Something went wrong.";
     }
-    
+
 
 
 }
@@ -150,21 +150,7 @@ if ($_POST) {
         </div>
       </div>
       <div class="row center">
-<<<<<<< HEAD
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Create Account</button>
-=======
-      <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span>Terms and Conditions</span>
-            </label>
-          </p>
-      </form>
-    </div>
-      <div class="row center">
-        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
->>>>>>> bd43a0c1684a2536073c3eee37e515200861c727
     </form>
   </div>
 
