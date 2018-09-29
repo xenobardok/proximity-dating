@@ -24,21 +24,6 @@
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">ProxiChats</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A chat service for nearby users</h5>
-      </div>
-      <div class="row left">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
-      </div>
-      <div class="row right">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
-      </div>
-      <br><br>
-
-    </div>
   </div>
 
     <br><br>
