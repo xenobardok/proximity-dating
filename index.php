@@ -18,7 +18,7 @@
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Login</a></li>
+        <li><a href="#">Create Account</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -30,8 +30,11 @@
       <div class="row center">
         <h5 class="header col s12 light">A chat service for nearby users</h5>
       </div>
-      <div class="row center">
+      <div class="row left">
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red">Login</a>
+      </div>
+      <div class="row right">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red">Create Account</a>
       </div>
       <br><br>
 
