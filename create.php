@@ -44,6 +44,21 @@
           <input placeholder="Phone Number" id="phone_number" type="text" class="validate">
           <label for="phone_number"></label>
         </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s2">
+          <input placeholder="Day" id="day" type="text" class="validate">
+          <label for="day"></label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Month" id="month" type="text" class="validate">
+          <label for="month"></label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="Year" id="year" type="text" class="validate">
+          <label for="year"></label>
+        </div>
+      </div>
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="Password" id="password" type="password" class="validate">
