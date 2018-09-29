@@ -87,8 +87,21 @@
             <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
         </div>
       </div>
+    <div class="row">
+      <div class="input-field col s2">
+        <i class="material-text prefix">Distance:</i>
+      </div>
+      <div class="input-field col s10">
+        <form action="#">
+          <p class="range-field">
+            <input type="range" id="Distance" min="1" max="10" />
+          </p>
+        </form>
+      </div>
       <div class="row center">
         <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Update Account</a>
+      </div>
+    </div>
     </form>
   </div>
 
