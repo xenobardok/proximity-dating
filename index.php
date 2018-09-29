@@ -56,10 +56,10 @@
         <div class="col l3 s12">
           <h5 class="white-text">Contact Us</h5>
           <ul>
-            <li><a class="white-text" href="#!">Sunil Jamkatel</a></li>
-            <li><a class="white-text" href="#!">Shivam Kharga</a></li>
-            <li><a class="white-text" href="#!">Sagar Poudel</a></li>
-            <li><a class="white-text" href="#!">Andrew Jelson</a></li>
+            <p><a class="white-text" href="#!">Sunil Jamkatel (###)###-####</a></p>
+            <p><a class="white-text" href="#!">Shivam Kharga  (###)###-####</a></p>
+            <p><a class="white-text" href="#!">Sagar Poudel (###)###-####</a></p>
+            <p><a class="white-text" href="#!">Andrew Jelson  (713)447-4998</a></p>
           </ul>
         </div>
       </div>
