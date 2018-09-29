@@ -31,7 +31,7 @@
         <h5 class="header col s12 light">A chat service for nearby users</h5>
       </div>
       <div class="row left">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
+        <a href="login.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
       </div>
       <div class="row right">
         <a href="create.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
