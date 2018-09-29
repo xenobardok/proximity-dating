@@ -77,6 +77,16 @@
         </div>
       </div>
       <div class="row center">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Terms and Conditions</span>
+            </label>
+          </p>
+      </form>
+    </div>
+      <div class="row center">
         <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
     </form>
   </div>
