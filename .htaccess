@@ -1,3 +1,15 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+
+DirectoryIndex index.html index.php index.htm parking-page.html
+
+RewriteCond %{HTTP_HOST} ^nsaulm\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nsaulm\.com$
+RewriteRule ^mail$ "https\:\/\/server182\.web\-hosting\.com\:2096\/\?locale\=en" [R=301,L]
+
 RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^(([A-Za-z0-9\-]+/)*[A-Za-z0-9\-]+)?$ $1.php
