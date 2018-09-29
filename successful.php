@@ -13,14 +13,46 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right ">
         <input placeholder="Status" id="status" type="text" class="validate">
       </ul>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
   </div>
-
+  <nav>
+    <ul id="slide-out" class="sidenav-fixed">
+    <li><a href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">First</a></li>
+              <li><a href="#!">Second</a></li>
+              <li><a href="#!">Third</a></li>
+              <li><a href="#!">Fourth</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="right hide-on-med-and-down">
+    <li><a href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    <ul id='dropdown1' class='dropdown-content'>
+      <li><a href="#!">First</a></li>
+      <li><a href="#!">Second</a></li>
+      <li><a href="#!">Third</a></li>
+      <li><a href="#!">Fourth</a></li>
+    </ul>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </nav>
     <br><br>
   </div>
 
