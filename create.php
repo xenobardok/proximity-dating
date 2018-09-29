@@ -76,7 +76,7 @@ if ($_POST) {
 
 ?>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
       </ul>
@@ -150,7 +150,21 @@ if ($_POST) {
         </div>
       </div>
       <div class="row center">
+<<<<<<< HEAD
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Create Account</button>
+=======
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Terms and Conditions</span>
+            </label>
+          </p>
+      </form>
+    </div>
+      <div class="row center">
+        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
+>>>>>>> bd43a0c1684a2536073c3eee37e515200861c727
     </form>
   </div>
 
