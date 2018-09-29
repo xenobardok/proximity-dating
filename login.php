@@ -66,7 +66,7 @@ if ($_POST) {
 
 
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav style="color: #481346;" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
@@ -101,11 +101,12 @@ if ($_POST) {
         </div>
       </div>
       <div class="row center">
-        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Login</button>
+        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light" style="color: #b666d2"><a class="white-text" href="#!">Login</button>
     </div>
     </form>
-    <a href="forget.php"><button id="download-button" class="btn-large waves-effect waves-light orange">Forget</button></a>
-
+    <div class="row center">
+      <button id="download-button" class="btn-large waves-effect waves-light"style="color: #b666d2"><a class="white-text" href="forget.php">Forget</button></a>
+    </div>
   </div>
 
     <br><br>
