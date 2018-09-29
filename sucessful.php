@@ -14,7 +14,7 @@
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
+        <input placeholder="Username" id="username" type="text" class="validate">
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
