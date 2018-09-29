@@ -36,16 +36,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <input placeholder="Email" id="email" type="text" class="validate">
           <label for="email"></label>
         </div>
+      </div>
+      <div class="row">
         <div class="input-field col s6">
           <input placeholder="Phone Number" id="phone_number" type="text" class="validate">
           <label for="phone_number"></label>
         </div>
-      </div>
-      <div class="row">
         <div class="input-field col s1">
           <input placeholder="Day" id="day" type="text" class="validate">
           <label for="day"></label>
