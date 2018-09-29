@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="row center">
-        <button type="submit" href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</button>
+        <button type="submit" href="proximity.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</button>
     </form>
   </div>
 

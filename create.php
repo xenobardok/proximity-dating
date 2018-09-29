@@ -87,7 +87,7 @@
       </form>
     </div>
       <div class="row center">
-        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
+        <a href="proximity.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
     </form>
   </div>
 
