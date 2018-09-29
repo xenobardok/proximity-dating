@@ -70,7 +70,7 @@
         </div>
       </div>
       <div class="row center">
-        <a href="create.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
+        <a href="map.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
     </form>
   </div>
 
