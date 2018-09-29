@@ -13,7 +13,7 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="left Shide-on-med-and-down">
+      <ul class="center-align">
         <input placeholder="Status" id="username" type="text" class="validate">
       </ul>
 
