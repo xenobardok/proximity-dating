@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="row center">
-        <a href="sucessful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
+        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
     </form>
   </div>
 
