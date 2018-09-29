@@ -12,21 +12,12 @@
    </head>
 
    <body>
-
-     <!--JavaScript at end of body for optimized loading-->
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
-  type="text/javascript" charset="utf-8"></script>
-  <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
-  type="text/javascript" charset="utf-8"></script>
-  </head>
-  <body>
-  <div style="width: 640px; height: 480px" id="mapContainer"></div>
+     <div style="width: 640px; height: 480px" id="mapContainer"></div>
   <script>
     // Initialize the platform object:
     var platform = new H.service.Platform({
-    'app_id': 'J3G6HcXDEFfYJmRWCCEw ',
-    'app_code': 'wxf90uvzwKTDL1vxOj6qbA '
+    'app_id': 'J3G6HcXDEFfYJmRWCCEw',
+    'app_code': 'wxf90uvzwKTDL1vxOj6qbA'
     });
 
     // Obtain the default map types from the platform object
@@ -41,5 +32,11 @@
       center: { lng: 13.4, lat: 52.51 }
     });
   </script>
+
+
+
+     <!--JavaScript at end of body for optimized loading-->
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+
    </body>
  </html>
