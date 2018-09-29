@@ -13,32 +13,60 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Create Account</a></li>
+      <ul class="right">
+        <li><a href="login.php">Logout</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">ProxiChats</h1>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-text prefix">Name:</i>
+          <input id="name" type="text" class="validate">
+          <label for="name"></label>
+        </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-text prefix">Username:</i>
+          <input id="username" type="text" class="validate">
+          <label for="username"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-text prefix">Email:</i>
+          <input id="email" type="text" class="validate">
+          <label for="email"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <i class="material-text prefix">Phone Number:</i>
+          <input id="phone_number" type="text" class="validate">
+          <label for="phone_number"></label>
+        </div>
+        <div class="input-field col s4">
+          <i class="material-text prefix">Gender:</i>
+          <input id="gender" type="text" class="validate">
+          <label for="gender"></label>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-text prefix">Password:</i>
+          <input id="password" type="text" class="validate">
+          <label for="password"></label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-text prefix">Confirm Password:</i>
+          <input id="password" type="text" class="validate">
+          <label for="password"></label>
+        </div>
+      </div>
       <div class="row center">
-        <h5 class="header col s12 light">A chat service for nearby users</h5>
-      </div>
-      <div class="row left">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
-      </div>
-      <div class="row right">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
-      </div>
-      <br><br>
-
-    </div>
+        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
+    </form>
   </div>
 
     <br><br>

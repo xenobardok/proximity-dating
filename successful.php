@@ -11,16 +11,13 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-
-
-
-
-
-
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="right ">
+      <ul class="right">
         <input placeholder="Status" id="status" type="text" class="validate">
+      </ul>
+      <ul class="right">
+        <li><a href="index.php">Logout</a></li>
       </ul>
     </div>
   </nav>
@@ -39,8 +36,6 @@
           <li><a href="#!">Fourth</a></li>
         </ul>
       </ul>
-
-
     <ul class="">
       <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
       <ul id='dropdown2' class='dropdown-content'>
@@ -50,6 +45,7 @@
         <li><a href="#!">Fourth</a></li>
       </ul>
     </ul>
+    <a href="settings.php" id="download-button" class="btn-small waves-effect waves-light orange">settings</a>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 </nav>
 </div>
