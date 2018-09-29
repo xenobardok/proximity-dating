@@ -25,8 +25,8 @@
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li>
-          <a class="collapsible-header">People Nearby<i class="material-icons">arrow_drop_down</i></a>
-          <div class="collapsible-body">
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">People Nearby<i class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id='dropdown1' class='dropdown-content'>
             <ul>
               <li><a href="#!">First</a></li>
               <li><a href="#!">Second</a></li>
