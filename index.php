@@ -6,7 +6,7 @@
      <!--Import materialize.css-->
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
      <h1>ProxiChats</h1>
-     <p>Welcome to ProxiChats. Please Login</p>
+     <p>Welcome to ProxiChats. We are a proximity based chat service. Please Login below</p>
 
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
