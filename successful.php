@@ -13,14 +13,9 @@
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="center-align">
-        <input placeholder="Status" id="username" type="text" class="validate">
+      <ul class="right hide-on-med-and-down">
+        <input placeholder="Status" id="status" type="text" class="validate">
       </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Create Account</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
