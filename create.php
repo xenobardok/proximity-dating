@@ -151,9 +151,6 @@ if ($_POST) {
       </div>
       <div class="row center">
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Create Account</button>
-=======
-        <a href="proximity.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
->>>>>>> Jelson
     </form>
   </div>
 
