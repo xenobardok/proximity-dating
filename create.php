@@ -1,25 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
- <html>
-   <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <h1>ProxiChats</h1>
-     <p>Welcome to ProxiChats. We are a proximity based chat service. Please Login below</p>
-
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   </head>
-
-   <body>
-
-     <!--JavaScript at end of body for optimized loading-->
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-   </body>
- </html>
-=======
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -44,22 +23,55 @@
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">ProxiChats</h1>
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Name" id="name" type="text" class="validate">
+          <label for="name"></label>
+        </div>
+        <div class="input-field col s6">
+          <input placeholder="Username" id="username" type="text" class="validate">
+          <label for="username"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Email" id="email" type="text" class="validate">
+          <label for="email"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Phone Number" id="phone_number" type="text" class="validate">
+          <label for="phone_number"></label>
+        </div>
+        <div class="input-field col s1">
+          <input placeholder="Day" id="day" type="text" class="validate">
+          <label for="day"></label>
+        </div>
+        <div class="input-field col s3">
+          <input placeholder="Month" id="month" type="text" class="validate">
+          <label for="month"></label>
+        </div>
+        <div class="input-field col s2">
+          <input placeholder="Year" id="year" type="text" class="validate">
+          <label for="year"></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Password" id="password" type="password" class="validate">
+          <label for="password"></label>
+        </div>
+        <div class="input-field col s6">
+            <input placeholder="Confirm Password" id="confirm_password" type="password" class="validate">
+            <label for="confirm_password"></label>
+        </div>
+      </div>
       <div class="row center">
-        <h5 class="header col s12 light">A chat service for nearby users</h5>
-      </div>
-      <div class="row left">
-        <a href="login.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
-      </div>
-      <div class="row right">
-        <a href="create.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
-      </div>
-      <br><br>
-
-    </div>
+        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
+    </form>
   </div>
 
     <br><br>
@@ -100,4 +112,3 @@
 
   </body>
 </html>
->>>>>>> Jelson
