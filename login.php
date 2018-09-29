@@ -14,7 +14,10 @@
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
+        <li><a href="login.php">Login</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="create.php">Create Account</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -38,7 +41,7 @@
         </div>
       </div>
       <div class="row center">
-        <a href="sucessful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
+        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
     </form>
   </div>
 

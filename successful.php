@@ -11,23 +11,57 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
+  <div class = "row">
+    <div class = "col s3">
+      <nav>
+        <ul id="slide-out" class="sidenav-fixed">
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">People Nearby<i class="material-icons right">arrow_drop_down</i></a></li>
+              <ul id='dropdown1' class='dropdown-content'>
+                <ul>
+                  <li><a href="#!">First</a></li>
+                  <li><a href="#!">Second</a></li>
+                  <li><a href="#!">Third</a></li>
+                  <li><a href="#!">Fourth</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="left-align">
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recent Chats<i class="material-icons right">arrow_drop_down</i></a></li>
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!">First</a></li>
+          <li><a href="#!">Second</a></li>
+          <li><a href="#!">Third</a></li>
+          <li><a href="#!">Fourth</a></li>
+        </ul>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </nav>
+
+    </div>
+    <div class = "col s9">
+
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
+      <ul class="right ">
+        <input placeholder="Status" id="status" type="text" class="validate">
       </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Create Account</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
   </div>
 
+  <!-- side nav -->
+
     <br><br>
   </div>
+</div>
 
   <footer class="page-footer orange">
     <div class="container">

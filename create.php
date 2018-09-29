@@ -14,7 +14,10 @@
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
+        <li><a href="login.php">Login</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="create.php">Create Account</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -54,9 +57,13 @@
           <input placeholder="Month" id="month" type="text" class="validate">
           <label for="month"></label>
         </div>
-        <div class="input-field col s2">
+        <div class="input-field col s1">
           <input placeholder="Year" id="year" type="text" class="validate">
           <label for="year"></label>
+        </div>
+        <div class="input-field col s1">
+          <input placeholder="Gender" id="gender" type="text" class="validate">
+          <label for="gender"></label>
         </div>
       </div>
       <div class="row">
