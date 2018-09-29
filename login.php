@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="js/login.js"></script>
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
@@ -27,7 +28,7 @@
     </div>
   </nav>
   <div class="row">
-    <form class="col s12">
+    <form class="col s12" method="post">
       <div class="row">
         <div class="input-field col s12">
           <input placeholder="Username" id="username" type="text" class="validate">
@@ -41,7 +42,7 @@
         </div>
       </div>
       <div class="row center">
-        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
+        <button type="submit" href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</button>
     </form>
   </div>
 
