@@ -34,7 +34,7 @@
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
       </div>
       <div class="row right">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
+        <a href="create.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
       </div>
       <br><br>
 
