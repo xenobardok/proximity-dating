@@ -39,10 +39,11 @@
         <div class="input-field col s6">
           <input placeholder="Password" id="password" type="password" class="validate">
           <label for="password"></label>
+        </div>
           <div class="input-field col s6">
             <input placeholder="Confirm Password" id="confirm_password" type="password" class="validate">
             <label for="confirm_password"></label>
-        </div>
+          </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
