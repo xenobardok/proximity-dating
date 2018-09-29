@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="row center">
-        <a href="map.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
+        <a href="sucessful.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
     </form>
   </div>
 
