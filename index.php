@@ -46,8 +46,8 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-heading text-uppercase">ProxiChats</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Login</a>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Register</a>
+          <a class="btn btn-primary btn-xl text-uppercase" href="login.php">Login</a>
+          <a class="btn btn-primary btn-xl text-uppercase" href="create.php">Register</a>
         </div>
       </div>
     </header>
