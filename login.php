@@ -20,7 +20,7 @@ if ($_POST) {
   $username = $_POST['username'];
   $password = $_POST['password'];
 
- 
+
   try {
     $db = "mysql:host=localhost;dbname=proxichats";
     $user = "proxichats-admin";
@@ -29,24 +29,24 @@ if ($_POST) {
 
     $password=md5($password);
 
-    $sql = ("SELECT * FROM users WHERE username='".$username."' AND password='".$password."'"); 
+    $sql = ("SELECT * FROM users WHERE username='".$username."' AND password='".$password."'");
 
 
-    $result = $pdo->query($sql); 
+    $result = $pdo->query($sql);
 
     $row = $result ->fetch();
 
     if($row){
-                               
+
       $username = $row['username'];
       $name = $row['name'];
- 
+
       session_start();
       $_SESSION['username']=$username;
       $_SESSION['name']=$name;
 
      echo "<script> window.location.href = 'proximity.php'; </script>";
-  
+
   }
   else{
     $error="<div id='error'>Invalid email or password</div>";
