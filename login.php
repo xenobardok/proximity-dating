@@ -33,7 +33,7 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Password" id="password" type="text" class="validate">
+          <input placeholder="Password" id="password" type="password" class="validate">
           <label for="password"></label>
         </div>
       </div>
