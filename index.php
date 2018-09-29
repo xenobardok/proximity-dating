@@ -1,106 +1,138 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
- <html>
-   <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <h1>ProxiChats</h1>
-     <p>Welcome to ProxiChats. We are a proximity based chat service. Please Login below</p>
-
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   </head>
-
-   <body>
-
-     <!--JavaScript at end of body for optimized loading-->
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-   </body>
- </html>
-=======
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>ProxiChats</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="login.php">Login</a></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="create.php">Create Account</a></li>
-      </ul>
+  <head>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Create Account</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">ProxiChats</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A chat service for nearby users</h5>
-      </div>
-      <div class="row left">
-        <a href="login.php" id="download-button" class="btn-large waves-effect waves-light orange">Login</a>
-      </div>
-      <div class="row right">
-        <a href="create.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
-      </div>
-      <br><br>
+    <meta charset="utf-8">
+    <meta name="copyright" content="ProxiChats">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="keywords" content="ProxiChats provides easy chatting solutions for users nearby">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ProxiChats provides easy chatting solutions for users nearby">
+    <meta name="author" content="VOLHACKS 2018">
 
-    </div>
-  </div>
+    <title>ProxiChats</title>
 
-    <br><br>
-  </div>
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of College Students at VolHacks III creating a location based messaging service. We hope you enjoy!</p>
+    <!-- Custom fonts for this template -->
+    <link href="./css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contact Us</h5>
-          <ul>
-            <p><a class="white-text" href="#!">Sunil Jamkatel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Shivam Kharga  (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Sagar Poudel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Andrew Jelson  (713)447-4998</a></p>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/main.css" rel="stylesheet">
+    
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-      Made by <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="./img/logo.jpg" alt=""></a>
+        
       </div>
-    </div>
-  </footer>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-heading text-uppercase">ProxiChats</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Login</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Register</a>
+        </div>
+      </div>
+    </header>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+<script  type="text/javascript" charset="UTF-8" >
+/**
+ * Moves the map to display over Berlin
+ *
+ * @param  {H.Map} map      A HERE Map instance within the application
+ */
+function moveUser(map){
+    navigator.geolocation.getCurrentPosition(function(position) {
+    var userLat = (position.coords.latitude);
+    var userLong = (position.coords.longitude);
+    var userLoc = {lat:userLat, lng:userLong};
+  map.setCenter(userLoc);
+  map.setZoom(14);
+  
+var userMark = new H.map.Marker(userLoc);
+map.addObject(userMark);
+
+var userMark1 = new H.map.Marker({lat:35.953757, lng:-83.930584});
+map.addObject(userMark1);
+var userMark2 = new H.map.Marker({lat:35.955757, lng:-83.939584});
+map.addObject(userMark2);
+var userMark3 = new H.map.Marker(userLoc);
+map.addObject(userMark3);
+    });
+    };
+
+
+
+
+
+/**
+ * Boilerplate map initialization code starts below:
+ */
+
+//Step 1: initialize communication with the platform
+var platform = new H.service.Platform({
+  app_id: 'SG9KMY3cfbGscQunN6zF',
+  app_code: '3FnHcrAKpekFmHUrZDWdKg',
+  useHTTPS: true
+});
+var pixelRatio = window.devicePixelRatio || 1;
+var defaultLayers = platform.createDefaultLayers({
+  tileSize: pixelRatio === 1 ? 256 : 512,
+  ppi: pixelRatio === 1 ? undefined : 320
+});
+
+//Step 2: initialize a map  - not specificing a location will give a whole world view.
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map, {pixelRatio: pixelRatio});
+
+
+
+// Create the default UI components
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+// Now use the map as required...
+moveUser(map);
+
+
+
+
+// Bubble
+
+
+  </script>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/main.js"></script>
+    <div id="fb-root"></div>
+
 
   </body>
+
 </html>
->>>>>>> Jelson
