@@ -12,6 +12,49 @@
 
 </head>
 <body>
+
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="proximity.php" class="brand-logo">ProxiChats</a>
+        <ul class="right ">
+          <input placeholder="Status" id="status" type="text" class="validate">
+        </ul>
+      </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+    </div>
+
+  <div class = "row">
+    <div class = "col s3">
+      <nav class="light-blue lighten-1" role="sidenav">
+        <ul class="">
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="login.php">First</a></li>
+            <li><a href="create.php">Second</a></li>
+            <li><a href="#!">Third</a></li>
+            <li><a href="#!">Fourth</a></li>
+          </ul>
+        </ul>
+
+
+      <ul class="">
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <ul id='dropdown2' class='dropdown-content'>
+          <li><a href="#!">First</a></li>
+          <li><a href="#!">Second</a></li>
+          <li><a href="#!">Third</a></li>
+          <li><a href="#!">Fourth</a></li>
+        </ul>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </nav>
+  </div>
+
+  <div class = "col s9">
+  </div>
+
+
+
   <div id="map" style="width: 100%; height: 60vh;"> </div>
   <div id="profile" style="width: 20%; height: 40vh; margin:0px auto">
     <div>

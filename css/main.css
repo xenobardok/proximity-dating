@@ -59,7 +59,7 @@ section h3.section-subheading {
 }
 
 section h3.section-subheading:nth-child(3) {
-  margin-bottom: 75px;  
+  margin-bottom: 75px;
 }
 
 @media (min-width: 768px) {
@@ -542,4 +542,7 @@ table td{
 
 #hours .text-muted {
   color: #481346!important;
+}
+nav{
+  background-color: #481346;
 }

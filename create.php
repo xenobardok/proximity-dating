@@ -11,6 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/create.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
@@ -75,7 +76,7 @@ if ($_POST) {
 }
 
 ?>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav style="color: #481346" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
