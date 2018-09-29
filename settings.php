@@ -20,52 +20,75 @@
     </div>
   </nav>
   <div class="row">
-    <form class="col s12">
+   <form class="col s12">
+       <div class="row">
+           <div class="input-field col s11">
+             <i class="material-text prefix">Name:</i>
+             <input disabled value="name" type="text" class="validate">
+             <label for="name"></label>
+           </div>
+           <div class="input-field col s1">
+               <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+           </div>
+       </div>
       <div class="row">
-        <div class="input-field col s12">
-          <i class="material-text prefix">Name:</i>
-          <input id="name" type="text" class="validate">
-          <label for="name"></label>
-        </div>
-      <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s11">
           <i class="material-text prefix">Username:</i>
-          <input id="username" type="text" class="validate">
+          <input disabled value="username" type="text" class="validate">
           <label for="username"></label>
         </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s11">
           <i class="material-text prefix">Email:</i>
-          <input id="email" type="text" class="validate">
+          <input disabled value="email" type="text" class="validate">
           <label for="email"></label>
         </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
       </div>
       <div class="row">
-        <div class="input-field col s8">
+        <div class="input-field col s7">
           <i class="material-text prefix">Phone Number:</i>
-          <input id="phone_number" type="text" class="validate">
-          <label for="phone_number"></label>
+          <input disabled value="phone" type="text" class="validate">
+          <label for="phone"></label>
         </div>
-        <div class="input-field col s4">
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+        <div class="input-field col s3">
           <i class="material-text prefix">Gender:</i>
-          <input id="gender" type="text" class="validate">
+          <input disabled value="gender" type="text" class="validate">
           <label for="gender"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s5">
           <i class="material-text prefix">Password:</i>
-          <input id="password" type="text" class="validate">
+          <input disabled value="password" type="text" class="validate">
           <label for="password"></label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
+        </div>
+        <div class="input-field col s5">
           <i class="material-text prefix">Confirm Password:</i>
-          <input id="password" type="text" class="validate">
-          <label for="password"></label>
+          <input disabled value="confirm_password" type="text" class="validate">
+          <label for="confirm_password"></label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="edit" name="action">Edit</button>
         </div>
       </div>
       <div class="row center">
-        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Create Account</a>
+        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Update Account</a>
     </form>
   </div>
 

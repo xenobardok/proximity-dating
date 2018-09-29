@@ -14,7 +14,7 @@
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ProxiChats</a>
       <ul class="right">
-        <li><a href="index.php">Logout</a></li>
+        <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
       </ul>
       <ul class="right">
         <input placeholder="Status" id="status" type="text" class="validate">
@@ -28,7 +28,7 @@
   <div class = "col s3">
     <nav class="light-blue lighten-1" role="sidenav">
       <ul class="">
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">People Nearby<i class="material-icons right">arrow_drop_down</i></a></li>
         <ul id='dropdown1' class='dropdown-content'>
           <li><a href="login.php">First</a></li>
           <li><a href="create.php">Second</a></li>
@@ -37,15 +37,15 @@
         </ul>
       </ul>
     <ul class="">
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-      <ul id='dropdown2' class='dropdown-content'>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recent Chats<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='dropdown1' class='dropdown-content'>
         <li><a href="#!">First</a></li>
         <li><a href="#!">Second</a></li>
         <li><a href="#!">Third</a></li>
         <li><a href="#!">Fourth</a></li>
       </ul>
     </ul>
-    <a href="settings.php" id="download-button" class="btn-small waves-effect waves-light orange">settings</a>
+    <a href="settings.php" id="download-button" class="btn-small waves-effect waves-light orange"><i class="material-icons">settings</i></a>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 </nav>
 </div>
