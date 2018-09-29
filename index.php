@@ -46,7 +46,8 @@
       <div class="container">
         <div class="intro-text">
           <div class="intro-heading text-uppercase">ProxiChats</div>
-          <a class="btn btn-primary btn-xl text-uppercase" href="login.php">Login</a>
+          <div class="intro-lead-in">A chat for nearby users</div>
+          <a class="btn btn-primary btn-xl text-uppercase" href="login.php">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
           <a class="btn btn-primary btn-xl text-uppercase" href="create.php">Register</a>
         </div>
       </div>
