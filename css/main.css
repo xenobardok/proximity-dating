@@ -652,3 +652,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
   
 height: 70px;
 }
+
+.user{
+  font-size: 20px;
+}
