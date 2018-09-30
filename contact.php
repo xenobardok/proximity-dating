@@ -27,11 +27,11 @@
     <br><h3>ProxiChats Developers</h3>
     <div class = "container">
       <div class = "row">
-  
-        <div class = "col-lg-3">
-          <div class="card medium hoverable">
+
+        <div class = "col-lg-6">
+          <div class="card large hoverable">
         <div class="card-image ">
-          <img class="responsive-img" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/29573210_779381698933410_8229633368321033971_n.jpg?_nc_cat=109&oh=d224f281dc7513fa92bf89272dab7d05&oe=5C1D81E0"/>
+          <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/29573210_779381698933410_8229633368321033971_n.jpg?_nc_cat=109&oh=d224f281dc7513fa92bf89272dab7d05&oe=5C1D81E0"/>
 
           <span class="card-title">Shivam Kharga</span>
         </div>
@@ -47,8 +47,8 @@
       </div>
         </div>
 
-        <div class = "col-lg-3">
-          <div class="card medium hoverable">
+        <div class = "col-lg-6">
+          <div class="card large hoverable">
         <div class="card-image">
           <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/18451704_10207336898460708_6139361643840477236_o.jpg?_nc_cat=111&oh=3ec9cfc36d51a025cb004e5ebe759536&oe=5C529B6B">
           <span class="card-title">Sunil Jamkatel</span>
@@ -65,8 +65,11 @@
       </div>
 
         </div>
-        <div class = "col-lg-3">
-          <div class="card medium hoverable">
+      </div>
+      <div class="row">
+
+        <div class = "col-lg-6">
+          <div class="card large hoverable">
         <div class="card-image">
           <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14907271_1164208820326270_298884293701475471_n.jpg?_nc_cat=110&oh=fff89ff53f51e6f5a34c46878d72f188&oe=5C254B0E">
           <span class="card-title">Sagar Poudel</span>
@@ -84,8 +87,8 @@
 
         </div>
 
-        <div class = "col-lg-3">
-          <div class="card medium hoverable">
+        <div class = "col-lg-6">
+          <div class="card large hoverable">
         <div class="card-image">
           <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/1656072_667565726643518_1464743767_n.jpg?_nc_cat=106&oh=424668222bb89172a30001130c0b4fc9&oe=5C5E7531">
           <span class="card-title">Andrew Jelson</span>
