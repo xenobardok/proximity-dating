@@ -21,7 +21,8 @@ a {
 }
 
 a:hover {
-  color: #702d30;
+  color: white;
+  text-decoration: none;
 }
 
 .text-primary {
@@ -79,6 +80,7 @@ section h3.section-subheading:nth-child(3) {
 }
 
 .btn-primary {
+  /* height: 0px; */
   background-color: #481346;
   border-color: #481346;
 }
@@ -629,4 +631,28 @@ nav{
 
 .card .card-action{
   padding: 10px 14px!important;
+}
+
+form {
+  height: 400px!important;
+  width: 600px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+label{
+  font-size: 20px;
+  color: black;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: 1px solid #711e6e;
+  box-shadow: 0 1px 0 0 #711e6e;
+}
+.login .btn-primary{
+  
+height: 70px;
+}
+
+.user{
+  font-size: 20px;
 }
