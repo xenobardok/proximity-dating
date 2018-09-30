@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
     jQuery("form").submit(function(e){
-        console.log("hi");
         var notSuccess= validateForm();   
  
         if(notSuccess){
