@@ -44,10 +44,7 @@ if (isset($_SESSION['username'])){
       $sql1 = "Select username from users where username!='".$username."'";
       $result1 = $pdo->query($sql1);
 
-      echo '<div class="row map-chat">
-          <div class="col-sm-2"><div class="online1">
-          <p>Nearby</p>
-          <div class="alternate">';
+      echo '';
 
       $actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]"."/proximity-dating/messages.php";
 
@@ -58,11 +55,9 @@ if (isset($_SESSION['username'])){
         echo "<a href='".$actual_link."?recipient=".$user."'><p>" .$user."</p></a>";
 
       }
-      echo "</div></div>";
+      echo "";
 
-      echo '<div class="online1">
-          <p>Recent Chats</p>
-          <div class="alternate">';
+      echo '';
 
       $sql2 = "Select user2 from chats where user1='".$username."'";
       $result2 = $pdo->query($sql2);
@@ -74,7 +69,7 @@ if (isset($_SESSION['username'])){
         echo "<a href='".$actual_link."?recipient=".$user."'><p>" .$user."</p></a>";
 
       }
-      echo "</div></div></div></div>";
+      echo "";
 
     }
 

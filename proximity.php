@@ -23,7 +23,7 @@
       <p>Sunil Jamkatel</p>
       <p>Sagar Poudel</p>
       </div>
-  
+
   </div></div>
     <div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div>
   </div>
