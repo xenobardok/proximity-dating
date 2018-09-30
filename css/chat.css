@@ -1,23 +1,27 @@
 #wrapper{
 
-    width:750px;
-    margin:10px auto;
-    background: #f1f1f1;
-    padding:20px;
+width:750px;
+
+/* margin:10px auto; */
+
+background: #dcb5db;
+
+padding:10px 20px 20px 20px;
 }
 
 .chat-wrapper{
-    width: 70%;
+    /* height: auto; */
+    width: 90%;
     margin:10px auto;
     background: #ffffff;
-
+    border-radius: 15px;
 }
 
 #chat{
-    min-height: 500px;
+    /* min-height: 500px; */
     height:500px;
     border: 1px solid #b3b3b3;
-    padding: 10px;
+    padding: 20px;
     overflow:auto;
 }
 
@@ -27,6 +31,33 @@
     outline:none;
     padding:10px;
     height: 100px;
-
+    border-radius: 10px;
     margin-top:10px;
+}
+
+.message-form{
+    height: 120px!important;
+}
+
+.sent{
+    float: right;
+    padding: 5px;
+    background-color: #b5dcdb;
+    border-radius: 5px;
+}
+
+.received{
+    float:left;
+    padding: 5px;
+    background-color: #d2d0d8;
+    border-radius: 5px;
+}
+
+.chat-wrapper form{
+    width: auto;
+    margin: 0px;
+}
+
+#wrapper h2{
+    margin: 15px 15px 25px 15px;;
 }

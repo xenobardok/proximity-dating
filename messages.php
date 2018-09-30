@@ -44,11 +44,11 @@ if (isset($_SESSION['username'])){
       $sql1 = "Select username from users where username!='".$username."'";
       $result1 = $pdo->query($sql1);
 
-      echo '<div class="row map-chat">
-          <div class="col-sm-2"><div class="online1">
-          <p>Nearby</p>
-          <div class="alternate">';
-
+      
+      echo "<div class='container'> ";
+      echo "<div class='row map-chat'>";
+      echo "<div class='col-sm-3'>";
+      echo " <div class='online'>      <p>Online now</p> <div class='alternate'>";
       $actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]"."/proximity-dating/messages.php";
 
       foreach ($result1 as $row1){
@@ -58,12 +58,7 @@ if (isset($_SESSION['username'])){
         echo "<a href='".$actual_link."?recipient=".$user."'><p>" .$user."</p></a>";
 
       }
-      echo "</div></div>";
-
-      echo '<div class="online1">
-          <p>Recent Chats</p>
-          <div class="alternate">';
-
+      
       $sql2 = "Select user2 from chats where user1='".$username."'";
       $result2 = $pdo->query($sql2);
 
@@ -73,14 +68,13 @@ if (isset($_SESSION['username'])){
 
         echo "<a href='".$actual_link."?recipient=".$user."'><p>" .$user."</p></a>";
 
+        
       }
-      echo "</div></div></div></div>";
-
     }
-
     catch (PDOException $e) {
       echo "Something went wrong.";
     }
+    echo "</div></div></div>";
 ?>
 
 
@@ -91,15 +85,15 @@ if (isset($_SESSION['username'])){
     ?>
 
 
-<div class="col s9">
+<div class="col-sm-9">
     <div id="wrapper">
-   <h1>Chatting with <span id="recipient"><?php echo $recipient;?></span></h1>
+   <h2 class="center">Chatting with <span id="recipient"><?php echo $recipient;?></span></h2>
       <div class="chat-wrapper">
         <div id="chat">
 
 
         </div>
-        <form method = 'post' action="formHandler.php" id="form">
+        <form  class ="message-form" method = 'post' action="formHandler.php" id="form">
           <textarea name="message"  cols="30"  class="textarea"></textarea>
         </form>
       </div>
@@ -155,7 +149,9 @@ if (isset($_SESSION['username'])){
 
     </script>
 
-<?php
+<?php 
+      echo "</div>";
+      echo "</div>";
     }
 }
 

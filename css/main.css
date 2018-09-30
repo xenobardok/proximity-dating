@@ -570,7 +570,7 @@ nav{
 
 .online p{
   /* height: 30px; */
-  line-height: 2.75;
+  line-height: 2.5;
   color: white;
 }
 
@@ -603,7 +603,7 @@ nav{
 
 }
 
-.online .alternate p:nth-child(even){
+.online .alternate p:nth-child(even), .online .alternate a:nth-child(even) p{
   background-color: #a850bc;
 }
 
@@ -655,4 +655,8 @@ height: 70px;
 
 .user{
   font-size: 20px;
+}
+
+.center{
+  text-align: center;
 }

@@ -53,10 +53,12 @@ if (isset($_SESSION['username'])){
                     $message = $row['message'];
 
                     if($from==$sender){
-                        $chat.= '<div class="single-message sent"><strong>You: </strong>: '.$message.'<br>'.$time.'</div><br>';
+                        // $chat.= '<div class="single-message sent"><strong>You: </strong> '.$message.'<br>'.$time.'</div><br>';
+                        $chat.= '<div class="single-message sent"><strong>You: </strong> '.$message.'<br/>'.$time.'</div><br><br><br>';
+
                     }
                     else{
-                        $chat.= '<div class="single-message received"><strong>'.$from.'</strong>: '.$message.'<br>'.$time.'</div><br>';
+                        $chat.= '<div class="single-message received"><strong>'.$from.'</strong>: '.$message.'<br>'.$time.'</div><br><br><br>';
                     }
                 } 
                 echo $chat;        
