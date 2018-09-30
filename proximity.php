@@ -14,31 +14,22 @@
 
     <?php include_once('./includes/navbar.php');
 
+
     if(isset($_SESSION['username']))
     {
       $username=$_SESSION['username'];
-
-
-
-
+      $pdo = new PDO("mysql:host=localhost;dbname=proxichats", 'proxichats-admin', 'DdvGsF6hN7AA');
+      $sql_list = "select * from users where username!='".$username."' AND online=1";
+      $result = $pdo->query($sql_list);
+      echo '<div class="row map-chat"> <div class="container"> <div class="row map-chat"><div class="col-sm-3"><div class="online"><p>Online now</p><div class="alternate">';
+      foreach ($result as $data) {
+          echo '<p>'.  $data['username'] . '</p>';
+        }
+        echo '</div></div></div><div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div></div></div>';
     ?>
 
-  <div class="container">
 
-  <div class="row map-chat">
-    <div class="col-sm-3"><div class="online">
-      <p>Online now</p>
-      <div class="alternate">
-      <p>Sunil Jamkatel</p>
-      <p>Sagar Poudel</p>
-      </div>
 
-  </div></div>
-    <div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div>
-  </div>
-  </div>
-
-<?php include_once("./includes/footer.php") ?>
 
   <script  type="text/javascript" charset="UTF-8" >
 
@@ -75,7 +66,6 @@ function moveMarker(map){
 
 
     <?php
-      $pdo = new PDO("mysql:host=localhost;dbname=proxichats", 'proxichats-admin', 'DdvGsF6hN7AA');
        $sql_map = "select * from users where username!='".$username."'";
 
        $result = $pdo->query($sql_map);
@@ -132,6 +122,8 @@ moveMarker(map);
     echo"<script>window.location.href='index.php'</script>";
   }
   ?>
+  <?php include_once("./includes/footer.php") ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>
