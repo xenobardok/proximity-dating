@@ -14,7 +14,10 @@
 
     <?php include_once('./includes/navbar.php');
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3635e954a86ef4db409619db35bbdd484d14066b
     if(isset($_SESSION['username']))
     {
       $username=$_SESSION['username'];
