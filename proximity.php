@@ -12,7 +12,18 @@
 </head>
 <body>
 
-    <?php include_once('./includes/navbar.php') ?>
+    <?php include_once('./includes/navbar.php');
+
+    session_start();
+
+    if(isset($_SESSION['username']))
+    {
+      $username=$_SESSION['username'];
+
+
+
+
+    ?>
 
   <div class="container">
 
@@ -23,7 +34,7 @@
       <p>Sunil Jamkatel</p>
       <p>Sagar Poudel</p>
       </div>
-  
+
   </div></div>
     <div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div>
   </div>
@@ -47,8 +58,9 @@ function moveMarker(map){
   navigator.geolocation.getCurrentPosition(function(position) {
   var userLat = (position.coords.latitude);
   var userLong = (position.coords.longitude);
-    var userLoc = {lat:userLat, lng:userLong};
-    console.log(userLoc);
+  var userLoc = {lat:userLat, lng:userLong};
+
+
 
     map.setCenter(userLoc);
     map.setZoom(18);
@@ -63,10 +75,31 @@ function moveMarker(map){
     });
     ui.addBubble(bubble);}, false);
 
-    addMarkerToGroup(group, {lat:35.9911239, lng:-83.9245021},
-      '<div class="marker-wrap"><div> <p><img src="./assets/images/cat.jpg" class="map-img"> Sagar </p> </div>' + '<div> <button class = "btn btn-primary" type = "submit" id = "connect">Connect</button></div></div>'
-      );
 
+    <?php
+      $pdo = new PDO("mysql:host=localhost;dbname=proxichats", 'proxichats-admin', 'DdvGsF6hN7AA');
+       $sql_map = "select * from users where username!='".$username."'";
+
+       $result = $pdo->query($sql_map);
+
+       foreach ($result as $data) {
+         $lat = $data['latitude'];
+         $lng = $data['longitude'];
+         $user = $data['username'];
+
+
+
+     ?>
+    var phLatitude = <?php echo(json_encode($lng)); ?>;
+    var phLongitude = <?php echo(json_encode($lat)); ?>;
+
+    console.log(typeof(phLatitude));
+    console.log(phLongitude);
+    addMarkerToGroup(group, {lat:phLatitude, lng:phLatitude},
+      '<div class="marker-wrap"><div> <p><img src="./assets/images/cat.jpg" class="map-img"> <?php echo $user ?> </p> </div>' + '<div><a href="messages.php?recipient=<?php echo $user ?>"> <button class = "btn btn-primary" type = "submit" id = "connect">Connect</button></a></div></div>'
+      );
+<?php }
+ ?>
 }
 
 var platform = new H.service.Platform({
@@ -92,18 +125,15 @@ var ui = H.ui.UI.createDefault(map, defaultLayers);
 moveMarker(map);
   </script>
 
-   <!-- <script  type="text/javascript" charset="UTF-8"
-
-    var connect_btn = document.getElementById('connect');
-    var profile = document.getElementById('profile');
-    connect_btn.addEventListener("click", function(){
-      document.getElementById('info').style.visibility = "visible";
-    });
+  <?php
 
 
-}
-  </script> -->
 
+  }
+  else{
+    echo"<script>window.location.href='index.php'</script>";
+  }
+  ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>
