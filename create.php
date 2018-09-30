@@ -77,7 +77,7 @@ if ($_POST) {
 
 ?>
   <nav style="color: #481346" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">PROXICHATS</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
       </ul>
@@ -151,8 +151,7 @@ if ($_POST) {
         </div>
       </div>
       <div class="row center">
-        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Create Account</button>
-        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light deep-purple darken-3"><a class="white-text" href="#!">Create Account</button>
+        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light purple darken-4">Create Account</button>
     </form>
   </div>
 
