@@ -1,5 +1,10 @@
 <?php include_once('./includes/header.php') ?>
     
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/main.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
