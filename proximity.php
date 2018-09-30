@@ -19,13 +19,28 @@
     {
       $username=$_SESSION['username'];
       $pdo = new PDO("mysql:host=localhost;dbname=proxichats", 'proxichats-admin', 'DdvGsF6hN7AA');
-      $sql_list = "select * from users where username!='".$username."' AND online=1";
-      $result = $pdo->query($sql_list);
-      echo '<div class="row map-chat"> <div class="container"> <div class="row map-chat"><div class="col-sm-3"><div class="online"><p>Online now</p><div class="alternate">';
-      foreach ($result as $data) {
-          echo '<p>'.  $data['username'] . '</p>';
-        }
-        echo '</div></div></div><div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div></div></div>';
+       $sql_list = "select * from users where username!='".$username."' AND online=1";
+       $result = $pdo->query($sql_list);
+     echo '<div class="row map-chat">
+              <div class="container">
+                  <div class="row map-chat">
+                      <div class="col-sm-3">
+                          <div class="online">
+                              <p>Online now</p>
+                                  <div class="alternate">';
+       foreach ($result as $data) {
+           echo '<p>'.  $data['username'] . '</p>';
+         }
+        echo '                    </div>
+                            </div>
+                          </div>
+                      <div class="col-sm-9">
+                  <div id="map" style="width: 100%; height: 60vh;">
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   </div>';
     ?>
 
 
