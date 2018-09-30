@@ -71,7 +71,7 @@ if ($_POST) {
 
 ?>
 <?php session_start(); ?>
-<?php if(isset($_SESSION['username'])){ 
+<?php if(isset($_SESSION['username'])){
   echo '<script> window.location.href = "index.php";  </script>';}
   else {
 ?>
@@ -136,7 +136,7 @@ if ($_POST) {
             <label for="confirm_password"></label>
         </div>
       </div>
-      <div class="row center">
+      <div class="center">
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light purple darken-4">Create Account</button>
     </form>
   </div>
@@ -144,7 +144,7 @@ if ($_POST) {
     <br><br>
   </div>
 
-  <?php include "footer.php" ?>
+  <?php include_once('./includes/footer.php') ?>
   <?php } ?>
 
   <!--  Scripts-->
