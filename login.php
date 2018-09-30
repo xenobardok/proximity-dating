@@ -35,9 +35,10 @@ if ($_POST) {
       $username = $row['username'];
       $name = $row['name'];
 
-      session_start();
       $_SESSION['username']=$username;
       $_SESSION['name']=$name;
+      $sql1 = "UPDATE users SET online=1 WHERE username='".$_SESSION['username']."'";
+      $result = $pdo->query($sql1);
 
      echo "<script> window.location.href = 'proximity.php'; </script>";
 
@@ -59,7 +60,6 @@ if ($_POST) {
 
 
 <body class="login">
-<?php session_start(); ?>
 <?php if(isset($_SESSION['username'])){ 
   echo '<script> window.location.href = "index.php";  </script>';}
   else {

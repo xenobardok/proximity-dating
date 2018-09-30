@@ -552,8 +552,9 @@ nav{
 }
 
 .map-chat {
+  margin-right: 0px;
   margin-top: 50px;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .map-chat .col-sm-3{
@@ -665,4 +666,8 @@ height: 70px;
 
 .btn-primary{
   margin: 10px;
+}
+
+a.logout:hover{
+  color: #d3acdb;
 }

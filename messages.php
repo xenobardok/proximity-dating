@@ -41,7 +41,7 @@ if (isset($_SESSION['username'])){
       $pass = "DdvGsF6hN7AA";
       $pdo = new PDO($db, $user, $pass);
 
-      $sql1 = "Select username from users where username!='".$username."'";
+      $sql1 = "Select username from users where username!='".$username."' AND online=1";
       $result1 = $pdo->query($sql1);
 
 

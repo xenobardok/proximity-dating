@@ -16,7 +16,7 @@
         <div class="intro-text">
           <div class="intro-heading text-uppercase">ProxiChats</div>
           <div class="intro-lead-in">A chat for nearby users</div>
-          <?php session_start();
+          <?php 
           if(isset($_SESSION['username'])){
               echo "<h3>Hi, ".$_SESSION['username']."!</h3> <br/>";
               echo '<a class="btn btn-primary btn-xl text-uppercase" href="proximity.php">View your proximity</a>';

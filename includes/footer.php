@@ -9,7 +9,7 @@
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="contact.php">
-                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-envelope"></i>
                 </a>
               </li>
             </ul>
