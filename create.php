@@ -151,6 +151,7 @@ if ($_POST) {
         </div>
       </div>
       <div class="row center">
+        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Create Account</button>
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light deep-purple darken-3"><a class="white-text" href="#!">Create Account</button>
     </form>
   </div>
