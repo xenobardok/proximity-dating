@@ -308,7 +308,7 @@
 }
 
 .purple {
-  background-color: #9c27b0 !important;
+  background-color: #b666d2 !important;
 }
 
 .purple-text {
@@ -2944,9 +2944,9 @@ ul.staggered-list li {
 }
 
 .page-footer {
-  padding-top: 20px;
-  color: #fff;
-  background-color: #ee6e73;
+    padding-top: 20px;
+    color: #fff;
+    background-color: #b666d2;
 }
 
 .page-footer .footer-copyright {
