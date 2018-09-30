@@ -67,11 +67,11 @@ if ($_POST) {
 
 <body>
   <nav style="color: #481346;" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
-      <ul class="right hide-on-med-and-down">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">PROXICHATS</a>
+      <ul class="right">
         <li><a href="login.php">Login</a></li>
       </ul>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right">
         <li><a href="create.php">Create Account</a></li>
       </ul>
 
@@ -82,23 +82,27 @@ if ($_POST) {
     </div>
   </nav>
   <div class="row">
-  <?php
-        echo $error;
-  ?>
+  <?php  echo $error;?>
     <form method="post">
-      <div class="row">
-        <div class="input-field col s12">
+      <div class="container">
+        <div class="col s6 offset-s3">
+            <div class="input-field">
           <input placeholder="Username" name="username" id="username" type="text" class="validate">
           <label for="username"></label>
           <div id="nameError"></div>
         </div>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
+      </div>
+      <div class="container">
+        <div class="col s6 offset-s3">
+          <div class="input-field">
           <input placeholder="Password" name="password" id="password" type="password" class="validate">
           <label for="password"></label>
           <div id="pwError"></div>
         </div>
+        </div>
+      </div>
+      <div class="row">
       </div>
       <div class="row center">
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light" style="color: #b666d2"><a class="white-text" href="#!">Login</button>
