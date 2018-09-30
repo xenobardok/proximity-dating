@@ -1,12 +1,8 @@
 #wrapper{
-
-width:750px;
-
-/* margin:10px auto; */
-
-background: #dcb5db;
-
-padding:10px 20px 20px 20px;
+/* width:750px; */
+/* margin:10px auto; */
+background: #dcb5db;
+padding:10px 20px 20px 20px;
 }
 
 .chat-wrapper{
