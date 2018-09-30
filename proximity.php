@@ -25,9 +25,7 @@
       foreach ($result as $data) {
           echo '<p>'.  $data['username'] . '</p>';
         }
-        echo '</div></div></div><div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div>
-        </div>
-        </div>';
+        echo '</div></div></div><div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div></div></div>';
     ?>
 
 

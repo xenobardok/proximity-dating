@@ -44,7 +44,7 @@ if (isset($_SESSION['username'])){
       $sql1 = "Select username from users where username!='".$username."'";
       $result1 = $pdo->query($sql1);
 
-      
+
       echo "<div class='container'> ";
       echo "<div class='row map-chat'>";
       echo "<div class='col-sm-3'>";
@@ -58,7 +58,7 @@ if (isset($_SESSION['username'])){
         echo "<a href='".$actual_link."?recipient=".$user."'><p>" .$user."</p></a>";
 
       }
-      
+
       $sql2 = "Select user2 from chats where user1='".$username."'";
       $result2 = $pdo->query($sql2);
 
@@ -68,7 +68,7 @@ if (isset($_SESSION['username'])){
 
         echo "<a href='".$actual_link."?recipient=".$user."'><p>" .$user."</p></a>";
 
-        
+
       }
     }
     catch (PDOException $e) {
@@ -149,7 +149,7 @@ if (isset($_SESSION['username'])){
 
     </script>
 
-<?php 
+<?php
       echo "</div>";
       echo "</div>";
     }
