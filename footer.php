@@ -1,4 +1,4 @@
-<footer class="page-footer orange">
+<footer class="page-footer purple lighten-2">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -8,19 +8,16 @@
 
       </div>
       <div class="col l3 s12">
-        <h5 class="white-text">Contact Us</h5>
+        <h5 class="row"></h5>
         <ul>
-          <p><a class="white-text" href="#!">Sunil Jamkatel (###)###-####</a></p>
-          <p><a class="white-text" href="#!">Shivam Kharga  (###)###-####</a></p>
-          <p><a class="white-text" href="#!">Sagar Poudel (###)###-####</a></p>
-          <p><a class="white-text" href="#!">Andrew Jelson  (713)447-4998</a></p>
+          <p><a class="white-text" href="contact.php">Contact Us</a></p>
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-    Made by <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    Made with <a class="red-text text-lighten-4" href="http://materializecss.com">Materialize</a>
     </div>
   </div>
 

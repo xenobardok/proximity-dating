@@ -1,95 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>ProxiChats</title>
+<?php include_once('./includes/header.php') ?>
+<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="successful.php" class="brand-logo">ProxiChats</a>
-      <ul class="right">
-        <li><a href="index.php"><i class="material-icons">power_settings_new</i></a></li>
-      </ul>
-      <ul class="right">
-        <input placeholder="Status" id="status" type="text" class="validate">
-      </ul>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
+
+    <?php include_once('./includes/navbar.php') ?>
+
+  <div class="container">
+
+  <div class="row map-chat">
+    <div class="col-sm-3"><div class="online">
+      <p>Online now</p>
+      <div class="alternate">
+      <p>Sunil Jamkatel</p>
+      <p>Sagar Poudel</p>
+      </div>
+  
+  </div></div>
+    <div class="col-sm-9"><div id="map" style="width: 100%; height: 60vh;"> </div></div>
+  </div>
   </div>
 
-<div class = "row">
-  <div class = "col s3">
-    <nav class="light-blue lighten-1" role="sidenav">
-      <ul class="">
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">People Nearby<i class="material-icons right">arrow_drop_down</i></a></li>
-        <ul id='dropdown1' class='dropdown-content'>
-          <li><a href="login.php">First</a></li>
-          <li><a href="create.php">Second</a></li>
-          <li><a href="#!">Third</a></li>
-          <li><a href="#!">Fourth</a></li>
-        </ul>
-      </ul>
-    <ul class="">
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Recent Chats<i class="material-icons right">arrow_drop_down</i></a></li>
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="#!">First</a></li>
-        <li><a href="#!">Second</a></li>
-        <li><a href="#!">Third</a></li>
-        <li><a href="#!">Fourth</a></li>
-      </ul>
-    </ul>
-    <a href="settings.php" id="download-button" class="btn-small waves-effect waves-light orange"><i class="material-icons">settings</i></a>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-</nav>
-</div>
+<?php include_once("./includes/footer.php") ?>
 
-<div class = "col s9">
-</div>
+  <script  type="text/javascript" charset="UTF-8" >
+
+  function addMarkerToGroup(group, coordinate, html) {
+    var marker = new H.map.Marker(coordinate);
+    // add custom data to the marker
+    marker.setData(html);
+    group.addObject(marker);
+  }
+
+function moveMarker(map){
+  var group = new H.map.Group();
+  map.addObject(group);
+
+  navigator.geolocation.getCurrentPosition(function(position) {
+  var userLat = (position.coords.latitude);
+  var userLong = (position.coords.longitude);
+    var userLoc = {lat:userLat, lng:userLong};
+    console.log(userLoc);
+
+    map.setCenter(userLoc);
+    map.setZoom(18);
+
+    var userMarker = new H.map.Marker({lat:userLat, lng:userLong});
+    map.addObject(userMarker);
+  });
+
+  group.addEventListener('tap', function (evt) {
+    var bubble =  new H.ui.InfoBubble(evt.target.getPosition(), {
+    content: evt.target.getData()
+    });
+    ui.addBubble(bubble);}, false);
+
+    addMarkerToGroup(group, {lat:35.9911239, lng:-83.9245021},
+      '<div class="marker-wrap"><div> <p><img src="./assets/images/cat.jpg" class="map-img"> Sagar </p> </div>' + '<div> <button class = "btn btn-primary" type = "submit" id = "connect">Connect</button></div></div>'
+      );
+
+}
+
+var platform = new H.service.Platform({
+  app_id: 'J3G6HcXDEFfYJmRWCCEw',
+  app_code: 'wxf90uvzwKTDL1vxOj6qbA',
+  useHTTPS: true
+});
+
+var pixelRatio = window.devicePixelRatio || 1;
+
+var defaultLayers = platform.createDefaultLayers({
+  tileSize: pixelRatio === 1 ? 256 : 512,
+  ppi: pixelRatio === 1 ? undefined : 320
+});
+
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map, {pixelRatio: pixelRatio});
+
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+moveMarker(map);
+  </script>
+
+   <!-- <script  type="text/javascript" charset="UTF-8"
+
+    var connect_btn = document.getElementById('connect');
+    var profile = document.getElementById('profile');
+    connect_btn.addEventListener("click", function(){
+      document.getElementById('info').style.visibility = "visible";
+    });
 
 
-</div>
+}
+  </script> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-
-  <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of College Students at VolHacks III creating a location based messaging service. We hope you enjoy!</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Contact Us</h5>
-          <ul>
-            <p><a class="white-text" href="#!">Sunil Jamkatel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Shivam Kharga  (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Sagar Poudel (###)###-####</a></p>
-            <p><a class="white-text" href="#!">Andrew Jelson  (713)447-4998</a></p>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="red-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+</body>
 </html>

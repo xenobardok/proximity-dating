@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="successful.php" class="brand-logo">ProxiChats</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="proximity.php" class="brand-logo">ProxiChats</a>
       <ul class="right">
         <li><a href="index.php">Logout</a></li>
       </ul>
@@ -99,7 +99,7 @@
         </form>
       </div>
       <div class="row center">
-        <a href="successful.php" id="download-button" class="btn-large waves-effect waves-light orange">Update Account</a>
+        <a href="proximity.php" id="download-button" class="btn-large waves-effect waves-light orange">Update Account</a>
       </div>
     </div>
     </form>

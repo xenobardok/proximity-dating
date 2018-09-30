@@ -11,6 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/create.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 
@@ -18,8 +19,8 @@
 <?php
 $error="";
 if ($_POST) {
-    
- 
+
+
 
   $name = $_POST['name'];
   $password = md5( $_POST['password']);
@@ -29,7 +30,7 @@ if ($_POST) {
   $gender = $_POST['gender'];
 
 
- 
+
   try {
     $db = "mysql:host=localhost;dbname=proxichats";
     $user = "proxichats-admin";
@@ -37,24 +38,24 @@ if ($_POST) {
     $pdo = new PDO($db, $user, $pass);
 
     $sql1 = "Select * from users where email='".$email."'";
-    $result1 = $pdo->query($sql1); 
+    $result1 = $pdo->query($sql1);
     $row1 = $result1->fetch();
 
     $sql2 = "Select * from users where username='".$username."'";
-    $result2 = $pdo->query($sql2); 
+    $result2 = $pdo->query($sql2);
     $row2 = $result2->fetch();
 
     if($row1){
       echo "Email already registered.";
     }
-    
+
     else if($row2)
     {
       echo "Username already taken.";
     }
     else{
-      $sql = "INSERT INTO users(username,name,email,password,phone,gender) VALUES('".$username."','".$name."','".$email."','".$password."','".$phone."','".$gender."')"; 
-      $pdo->query($sql); 
+      $sql = "INSERT INTO users(username,name,email,password,phone,gender) VALUES('".$username."','".$name."','".$email."','".$password."','".$phone."','".$gender."')";
+      $pdo->query($sql);
 
       session_start();
       $_SESSION['username']=$username;
@@ -62,21 +63,21 @@ if ($_POST) {
       echo "<script> window.location.href = 'proximity.php'; </script>";
     }
 
-     
 
 
-      
+
+
    } catch (PDOException $e) {
       echo "Something went wrong.";
     }
-    
+
 
 
 }
 
 ?>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
+  <nav style="color: #481346" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">PROXICHATS</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="login.php">Login</a></li>
       </ul>
@@ -151,6 +152,7 @@ if ($_POST) {
       </div>
       <div class="row center">
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light orange">Create Account</button>
+        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light deep-purple darken-3"><a class="white-text" href="#!">Create Account</button>
     </form>
   </div>
 

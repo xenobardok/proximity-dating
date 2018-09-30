@@ -308,7 +308,7 @@
 }
 
 .purple {
-  background-color: #9c27b0 !important;
+  background-color: #b666d2 !important;
 }
 
 .purple-text {
@@ -484,7 +484,7 @@
 }
 
 .deep-purple.darken-3 {
-  background-color: #4527a0 !important;
+  background-color: #481346 !important;
 }
 
 .deep-purple-text.text-darken-3 {
@@ -2944,9 +2944,9 @@ ul.staggered-list li {
 }
 
 .page-footer {
-  padding-top: 20px;
-  color: #fff;
-  background-color: #ee6e73;
+    padding-top: 20px;
+    color: #fff;
+    background-color: #b666d2;
 }
 
 .page-footer .footer-copyright {
@@ -5252,7 +5252,7 @@ small {
 .btn, .btn-large, .btn-small {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #481346;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
