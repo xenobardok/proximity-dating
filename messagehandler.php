@@ -15,9 +15,9 @@ if (isset($_SESSION['username'])){
                 $user = "proxichats-admin";
                 $pass = "DdvGsF6hN7AA";
                 $pdo = new PDO($db, $user, $pass);
-            
+
                 $sql1 = $pdo ->prepare( "INSERT INTO messages(sender,receiver,message) VALUES(?,?,?)");
-                $result1 = $sql1 ->execute([$sender,$recipient,$message]); 
+                $result1 = $sql1 ->execute([$sender,$recipient,$message]);
 
                 if($result1)
                 {
@@ -34,17 +34,17 @@ if (isset($_SESSION['username'])){
         case "getMessage":
             $recipient = $_REQUEST['user'];
 
-            
+
             try {
                 $db = "mysql:host=localhost;dbname=proxichats";
                 $user = "proxichats-admin";
                 $pass = "DdvGsF6hN7AA";
                 $pdo = new PDO($db, $user, $pass);
-            
-                $sql1 = "SELECT * FROM  messages where (sender='".$sender."' AND receiver='".$recipient."') OR (sender='".$recipient."' AND receiver = '".$sender."')";
-                $result1 = $pdo->query($sql1); 
 
-                
+                $sql1 = "SELECT * FROM  messages where (sender='".$sender."' AND receiver='".$recipient."') OR (sender='".$recipient."' AND receiver = '".$sender."')";
+                $result1 = $pdo->query($sql1);
+
+
                 $chat="";
                 foreach ($result1 as $row){
                     $from = $row['sender'];
@@ -54,23 +54,23 @@ if (isset($_SESSION['username'])){
 
                     if($from==$sender){
                         // $chat.= '<div class="single-message sent"><strong>You: </strong> '.$message.'<br>'.$time.'</div><br>';
-                        $chat.= '<div class="single-message sent"><strong>You: </strong> '.$message.'<br/>'.$time.'</div><br><br><br>';
+                        $chat.= '<div class="single-message sent"><strong>You: </strong> '.$message.'<br/>'.$time.'</div><br><br><br><br>';
 
                     }
                     else{
-                        $chat.= '<div class="single-message received"><strong>'.$from.'</strong>: '.$message.'<br>'.$time.'</div><br><br><br>';
+                        $chat.= '<div class="single-message received"><strong>'.$from.'</strong>: '.$message.'<br>'.$time.'</div><br><br><br><br>';
                     }
-                } 
-                echo $chat;        
+                }
+                echo $chat;
             }
             catch(PDOException $e){
                 echo 0;
-                
+
             }
             break;
 
 
-        
+
 
     }
 
