@@ -17,7 +17,7 @@ p {
 }
 
 a {
-  color: #e356de;
+  color: #ffff;
 }
 
 a:hover {
@@ -546,12 +546,19 @@ table td{
 nav{
   background-color: #481346;
 }
-
+#left{
+  float:left;
+}
 .map-chat {
   margin-top: 50px;
   margin-bottom: 50px
 }
-
+.map-chat .col-sm-2{
+  background-color: #a475ae;
+  padding: 0%;
+  font-size: 20px;
+  text-align: center;
+}
 .map-chat .col-sm-3{
   background-color: #a475ae;
   padding: 0%;
@@ -565,11 +572,16 @@ nav{
   background: rgb(113, 30, 110) !important;
   vertical-align: middle;
 }
+.online1{
+  width: 100%;
+  background: rgb(113, 30, 110) !important;
+  vertical-align: middle;
+}
 
 .online p{
   /* height: 30px; */
   line-height: 2.75;
-  color: white;
+  color: black;
 }
 
 .purpl{

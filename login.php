@@ -72,7 +72,7 @@ if ($_POST) {
   else {
 ?>
   <nav style="color: #481346;" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">PROXICHATS</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
       <ul class="right">
         <li><a href="login.php">Login</a></li>
       </ul>
