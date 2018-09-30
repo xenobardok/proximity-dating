@@ -18,6 +18,7 @@
           <div class="intro-lead-in">A chat for nearby users</div>
           <?php 
           if(isset($_SESSION['username'])){
+            include './timesync.php';
               echo "<h3>Hi, ".$_SESSION['username']."!</h3> <br/>";
               echo '<a class="btn btn-primary btn-xl text-uppercase" href="proximity.php">View your proximity</a>';
               echo '<a class="btn btn-primary btn-xl text-uppercase" href="logout.php">Logout</a>';

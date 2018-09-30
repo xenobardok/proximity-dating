@@ -4,7 +4,7 @@ session_start();
 date_default_timezone_set("UTC");
 
 if (isset($_SESSION['username'])){
-    $susername = $_SESSION['username'];
+    $username = $_SESSION['username'];
     switch($_REQUEST['action']){
         case "updatetime":
             
@@ -23,7 +23,7 @@ if (isset($_SESSION['username'])){
                 $date = date("Y-m-d H:i:s");
                 $time = strtotime($date);
                 
-                $time = $time - (1 * 60);
+                $time = $time - (2 * 60);
                 
                 $newTime = date("Y-m-d H:i:s", $time);
 
@@ -33,9 +33,8 @@ if (isset($_SESSION['username'])){
                 echo $newTime;
 
                 break;
-
-
-    }
+        
            
+}
 }
 ?>

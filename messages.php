@@ -33,7 +33,7 @@ if (isset($_SESSION['username'])){
 
     $username= $_SESSION['username'];
 
-
+    include './timesync.php';
 
     try {
       $db = "mysql:host=localhost;dbname=proxichats";
@@ -82,6 +82,9 @@ if (isset($_SESSION['username'])){
     if($_GET)
     {
       $recipient = $_GET['recipient'];
+
+      $sql1 = "INSERT INTO chats(user1,user2) VALUES ('".$username."','".$recipient."'";
+      $result1 = $pdo->query($sql1);
     ?>
 
 

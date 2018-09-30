@@ -40,6 +40,8 @@ if ($_POST) {
       $sql1 = "UPDATE users SET online=1 WHERE username='".$_SESSION['username']."'";
       $result = $pdo->query($sql1);
 
+      include './timesync.php';
+
      echo "<script> window.location.href = 'proximity.php'; </script>";
 
   }

@@ -17,6 +17,7 @@
 
     if(isset($_SESSION['username']))
     {
+      include './timesync.php';
       $username=$_SESSION['username'];
       $pdo = new PDO("mysql:host=localhost;dbname=proxichats", 'proxichats-admin', 'DdvGsF6hN7AA');
        $sql_list = "select * from users where username!='".$username."' AND online=1";
@@ -29,7 +30,7 @@
                               <p>Online now</p>
                                   <div class="alternate">';
        foreach ($result as $data) {
-           echo '<p>'.  $data['username'] . '</p>';
+           echo '<a href="messages.php?recipient='.$data['username'].'"><p>'.  $data['username'] . '</p></a>';
          }
         echo '                    </div>
                             </div>
@@ -47,6 +48,8 @@
 
 
   <script  type="text/javascript" charset="UTF-8" >
+   var userLat="";
+   var userLong="";
 
   function addMarkerToGroup(group, coordinate, html) {
     var marker = new H.map.Marker(coordinate);
@@ -55,23 +58,27 @@
     group.addObject(marker);
   }
 
+
+
 function moveMarker(map){
   var group = new H.map.Group();
   map.addObject(group);
 
   navigator.geolocation.getCurrentPosition(function(position) {
-  var userLat = (position.coords.latitude);
-  var userLong = (position.coords.longitude);
+   userLat = (position.coords.latitude);
+   userLong = (position.coords.longitude);
   var userLoc = {lat:userLat, lng:userLong};
 
 
-
+$.post('./updatemap.php?action=updatemap&lat='+userLat+'&long='+userLong,function(response){
+});
     map.setCenter(userLoc);
     map.setZoom(18);
 
-    var userMarker = new H.map.Marker({lat:userLat, lng:userLong});
-    map.addObject(userMarker);
+   // var userMarker = new H.map.Marker({lat:userLat, lng:userLong});
+   // map.addObject(userMarker);
   });
+
 
   group.addEventListener('tap', function (evt) {
     var bubble =  new H.ui.InfoBubble(evt.target.getPosition(), {
@@ -93,12 +100,12 @@ function moveMarker(map){
 
 
      ?>
-    var phLatitude = <?php echo(json_encode($lng)); ?>;
-    var phLongitude = <?php echo(json_encode($lat)); ?>;
+    var phLatitude = <?php echo(json_encode($lat)); ?>;
+    var phLongitude = <?php echo(json_encode($lng)); ?>;
 
-    console.log(typeof(phLatitude));
+    console.log(phLatitude);
     console.log(phLongitude);
-    addMarkerToGroup(group, {lat:phLatitude, lng:phLatitude},
+    addMarkerToGroup(group, {lat:phLatitude, lng:phLongitude},
       '<div class="marker-wrap"><div> <p><img src="./assets/images/cat.jpg" class="map-img"> <?php echo $user ?> </p> </div>' + '<div><a href="messages.php?recipient=<?php echo $user ?>"> <button class = "btn btn-primary" type = "submit" id = "connect">Connect</button></a></div></div>'
       );
 <?php }
@@ -126,6 +133,15 @@ var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
 var ui = H.ui.UI.createDefault(map, defaultLayers);
 
 moveMarker(map);
+
+
+
+
+
+    
+
+
+
   </script>
 
   <?php

@@ -34,22 +34,3 @@
 session_start();
 
 ?>
-
-
-<script>
-
-
-function updateTime(){
-
-           $.post('updateTime.php?action=updatetime',function(response){
-
-            console.log(response);  
-           });
-
-
-}
-
-setInterval(function(){updateTime();},60000);
-
-
-</script>
