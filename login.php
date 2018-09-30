@@ -66,6 +66,11 @@ if ($_POST) {
 
 
 <body>
+<?php session_start(); ?>
+<?php if(isset($_SESSION['username'])){ 
+  echo '<script> window.location.href = "index.php";  </script>';}
+  else {
+?>
   <nav style="color: #481346;" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">PROXICHATS</a>
       <ul class="right">
@@ -115,7 +120,7 @@ if ($_POST) {
 
     <br><br>
   </div>
-
+  <?php } ?>
   <?php  include "footer.php";?>
 
 
