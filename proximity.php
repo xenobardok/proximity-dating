@@ -12,13 +12,7 @@
 </head>
 <body>
 
-    <nav class="purpl" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="index.php" class="brand-logo">ProxiChats</a>
-        <ul class="right ">
-          <input placeholder="Status" id="status" type="text" class="validate">
-        </ul>
-      </div>
-    </nav>
+    <?php include_once('./includes/navbar.php') ?>
 
   <div class="container">
 

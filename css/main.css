@@ -9,7 +9,7 @@ html,body{
 }
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
 
 p {
@@ -34,8 +34,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-weight: 700; */
+  /* font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 }
 
 section {
@@ -603,4 +603,30 @@ nav{
 
 .online .alternate p:nth-child(even){
   background-color: #a850bc;
+}
+
+.contact h3{
+  text-align: center;
+}
+
+.card .card-title{
+  font-size: 20px!important;
+}
+
+.card .card-content .card-title{
+  padding-top: 10px!important;
+  line-height: 20px;
+  padding-left: 10px!important;
+}
+
+.card .card-content{
+  padding: 0px!important;
+}
+
+.card .card-action:last-child{
+  border-radius: 0px!important;
+}
+
+.card .card-action{
+  padding: 10px 14px!important;
 }
