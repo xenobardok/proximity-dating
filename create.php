@@ -79,31 +79,32 @@ if ($_POST) {
   <?php include_once('./includes/navbar.php') ?>
   <div class="row">
     <form class="col s12" method='post'>
+      <div class="container">
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s4">
           <input placeholder="Name" id="name" type="text" name="name" class="validate">
           <label for="name"></label>
           <div id="nameError"></div>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col s4">
           <input placeholder="Username" id="username" type="text" name="username" class="validate">
           <label for="username"></label>
           <div id="usernameError"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s6">
           <input placeholder="Email" id="email" type="text" name="email" class="validate">
           <label for="email"></label>
           <div id="emailError"></div>
         </div>
+
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s4">
           <input placeholder="Phone Number" id="phone_number"  name="phone" type="text" class="validate">
           <label for="phone_number"></label>
           <div id="phoneError"></div>
         </div>
+
         <div class="input-field col s1">
           <input placeholder="Day" id="day" type="text" name ="day" class="validate">
           <label for="day"></label>
@@ -124,7 +125,9 @@ if ($_POST) {
           <label for="gender"></label>
           <div id="genderError"></div>
         </div>
+
       </div>
+
       <div class="row">
         <div class="input-field col s6">
           <input placeholder="Password" id="password" type="password"   name="password" class="validate">
@@ -135,7 +138,7 @@ if ($_POST) {
             <input placeholder="Confirm Password" id="confirm_password" type="password" class="validate">
             <label for="confirm_password"></label>
         </div>
-      </div>
+</div>
       <div class="center">
         <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light purple darken-4">Create Account</button>
     </form>
@@ -143,6 +146,7 @@ if ($_POST) {
 
     <br><br>
   </div>
+</div>
 
   <?php include_once('./includes/footer.php') ?>
   <?php } ?>
