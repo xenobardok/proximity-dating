@@ -105,11 +105,11 @@ if ($_POST) {
       <div class="row">
       </div>
       <div class="row center">
-        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light" style="color: #b666d2"><a class="white-text" href="#!">Login</button>
+        <button type="submit"  id="download-button submit" class="btn-large waves-effect waves-light deep-purple darken-3"><a class="white-text" href="#!">Login</button>
     </div>
     </form>
     <div class="row center">
-      <button id="download-button" class="btn-large waves-effect waves-light"style="color: #b666d2"><a class="white-text" href="forget.php">Forget</button></a>
+      <button id="download-button" class="btn-large waves-effect waves-light deep-purple darken-3"><a class="white-text" href="forget.php">Forget</button></a>
     </div>
   </div>
 
